@@ -8,21 +8,23 @@
 # this will create empty git repository (it is hidden folder, it has staging area and commit history)
 
 # git status - 
+# it will create a 'master' branch, but we need some other name, we can rename it later, but if we use it in this command we can directly name it main, command is below
 
-# it will create a 'master' branch, but we need some other name, so we will delete the git folder
 # git init -b main
-# now it will create branch 'main'
+# now it will create branch 'main' (we can change name forcefully too if we want to at a later stage)
 
 # git add filename -> this will add the file in the staging area
 
 # git commit -> it goes into the local commit
 # git commit -m "message" -> we have to pass a message then only we can commit
 
+# git commit -a -m 'msg' -> this will auto save updates in staging area and then commit the files already in staging area
+
 # git log -> it will give us the log of all the commits
 
-# if we have some cahnges...and then we write git status, it will check and tell there is some modifications
+# if we have some changes...and then we write git status, it will check and tell there is some modifications
 
-# now if i type git commit -m "sometyhing"
+# now if i type git commit -m "something"
 # it will not commit, but say that changes not staged for commit
 # reason -> file is not in staging area, 
 # when we have to commit something, the file is currently in working directory, and then we have to add it to staging area, and from there it will go to commit history(local commit), but we did not add it in staging area, that is the reason commit did not work
@@ -31,9 +33,6 @@
 # then write git commit
 # now it will work
 
-# what if i want to directly commit?
-# by skipping staging
-# git commit -a -m "my third commit"
 
 
 ## diff command -> checking the difference
@@ -49,14 +48,7 @@
 # maybe bcoz that file has something confidential...and you don't want it to be uploaded
 # firstly you added in commit, and now you want to remove it.
 # git rm --cached filename
-
-
-# git clone (https address link)
-# this will clone the repo to our working directory.
-
-# we can use https and ssh
-# 
-
+# remember - this will only remove for upcoming commits, not for previous commits..so just don't add this file in staging area in the first place.
 
 
 ## setting up repo
@@ -79,7 +71,7 @@
 # it will rename the branch from master to main forcefully
 
 # difference between using ssh and https is 
-# for https - it asks for login
+# for https - it asks for login everytime
 # for ssh - setup the machine once, setup the key, and it will automatically login you
 
 
