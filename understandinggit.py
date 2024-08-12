@@ -124,10 +124,16 @@
 
 ## git branch
 # create a separate branch
-# git switch/checkout branchname - we can use either switch or checkout, checkout was used in old times, switch is used now.
+# git switch/checkout branchname - we can use either switch or checkout, checkout was used in old times, switch is used now. we can switch between branches using this command
 # this will work if you have created branch already
 # to create a branch
 # git checkout -b newbranch
+# git switch -c newbranch
 
 # git branch
-# lists all the branches in your project
+# lists all the local branches
+# git branch -r 
+# lists all the remote branches
+# git branch -a
+# lists all the branches (local + remote)
+
