@@ -7,7 +7,6 @@
 # i have to create local repository, for that i will write git init
 # this will create empty git repository (it is hidden folder, it has staging area and commit history)
 
-# git status - 
 # it will create a 'master' branch, but we need some other name, we can rename it later, but if we use it in this command we can directly name it main, command is below
 
 # git init -b main
@@ -92,3 +91,17 @@
 # -u means upstream
 # git push -u origin main -> for initial push
 # git push -> for subsequent pushes
+
+# why origin? 
+# git remote -v - fetch and push links
+# here we can see it is named as origin
+
+
+
+## git tag (this means version of software - like v1.1 v1.5)
+# command is
+# git tag - this will show you all the tags which are given till now for this project
+# (annotated tagging, lightweight tagging)
+# annotated tagging below -
+# git tag -a v1.0 -m '1st release'
+# git show v1.0 - this will show all the details for this tag
