@@ -105,3 +105,29 @@
 # annotated tagging below -
 # git tag -a v1.0 -m '1st release'
 # git show v1.0 - this will show all the details for this tag
+# but this will not show in github
+# we need to push tag also 
+# git push origin v1.0
+
+
+
+## git clone a project
+# git clone 'url' 
+# git log -> i can see the logs of every person (q to come out)
+# git tag -> it will show all the versions 
+# git show 1.79 -> it will show to commit number
+# git log --pretty=oneline -> this will show each commit in one line
+# we can't simply download and push in some project
+
+
+
+
+## git branch
+# create a separate branch
+# git switch/checkout branchname - we can use either switch or checkout, checkout was used in old times, switch is used now.
+# this will work if you have created branch already
+# to create a branch
+# git checkout -b newbranch
+
+# git branch
+# lists all the branches in your project
