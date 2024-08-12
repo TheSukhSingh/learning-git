@@ -47,4 +47,56 @@
 
 # removing a file from git repository
 # maybe bcoz that file has something confidential...and you don't want it to be uploaded
+# firstly you added in commit, and now you want to remove it.
+# git rm --cached filename
 
+
+# git clone (https address link)
+# this will clone the repo to our working directory.
+
+# we can use https and ssh
+# 
+
+
+
+## setting up repo
+
+# echo "# git-course demo" >> README.md
+# this will create a readme file (md -> markdown)
+
+# git init
+# same meaning
+
+# git status
+# tells the files untracked and tracked
+
+# git add filename
+# it will be added in staging area
+
+# git commit -m 'msg'
+
+# git branch -M main
+# it will rename the branch from master to main forcefully
+
+# difference between using ssh and https is 
+# for https - it asks for login
+# for ssh - setup the machine once, setup the key, and it will automatically login you
+
+
+# ssh-keygen -o
+# this created a key for one time, no need to create this again, it is created only once
+# enter the filename: don't enter anything (goes for default name)
+# passphrase - don't enter anything
+# just press enter, and then the file is created
+# now go to hidden folder .ssh and open the file, and copy the key
+# go to github settings, and ssh keys, enter the ssh key and save a name , eg learning github
+# it will successfully connect client and server.
+
+# git remote add origin (add ssh link)
+# remote is connected
+
+# git push -u origin main
+# pushes the commit to github
+# -u means upstream
+# git push -u origin main -> for initial push
+# git push -> for subsequent pushes
